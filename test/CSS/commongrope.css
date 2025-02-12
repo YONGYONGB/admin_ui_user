@@ -99,7 +99,6 @@ p{
     display: inline-block;
     border: 1px;
     padding: 0px 0px;
-    background-color: rgb(239, 239, 240);
 }
 
 
@@ -209,3 +208,4 @@ table > tr> th{
 .zero{
     padding-left: 0px;
 }
+
