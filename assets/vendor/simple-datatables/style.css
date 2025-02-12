@@ -5,6 +5,20 @@
 .datatable-wrapper.no-footer .datatable-container {
 	border-bottom: 1px solid #d9d9d9;
 }
+.datatable-top{
+	display: none;
+}
+.datatable-bottom > .datatable-info{
+	display: none;
+}
+.datatable-bottom {
+	display: flex;
+	justify-content: center;
+}
+button.datatable-sorter::before,
+button.datatable-sorter::after{
+	display: none;
+}
 
 .datatable-top,
 .datatable-bottom {

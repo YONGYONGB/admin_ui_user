@@ -368,11 +368,6 @@
         </a>
         <ul id="forms-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
           <li>
-            <a href="forms-elements.html" class="active">
-              <i class="bi bi-circle"></i><span>code</span>
-            </a>
-          </li>
-          <li>
             <a href="forms-layouts.html">
               <i class="bi bi-circle"></i><span>Form Layouts</span>
             </a>
@@ -407,6 +402,25 @@
           </li>
         </ul>
       </li><!-- End Tables Nav -->
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#system-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-bar-chart"></i><span>시스템 관리</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="system-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="forms-codeadmin1.html">
+              <i class="bi bi-circle"></i><span>코드 관리</span>
+            </a>
+          </li>
+          <li>
+            <a href="forms-codegroup1.html">
+              <i class="bi bi-circle"></i><span>코드그룹관리</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Charts Nav -->
+
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
@@ -551,28 +565,37 @@
                       <option value="4">코드그룹 이름(영문)</option>
                   </select></div>
                 <div class = "col-2 fbele"><input type="text" class="form-control" placeholder="검색어"></div>
-                <div class = "col-2 fbele bu"><button type="button" class="btn btn-outline-dark">d</button>
-                  <button type="button" class="btn btn-outline-dark"></button>
+                <div class = "col-2 fbele bu"><button type="button" class="btn btn-outline-dark" title="Search"><i class="bi bi-search"></i></button>
+                  <button type="button" class="btn btn-outline-dark"><i class="bi bi-arrow-clockwise"></i></button>
                 </button></div>
             </div>
             <div class=" row bb ">
-              <div class ="col-3"><h5>Total:160</h4></div>
-              <div class ="col-3"></div>
-              <div class ="col-6"></div>
-              <div class = "row cent justify-content-center">
-                <table class="table datatable" style=" text-align: center;">
+              <div class = "row cent justify-content-center"></div>
+                <div class ="col-3"><h4>Total:160</h4></div>
+                <div class ="col-3"></div>
+                <div class ="col-3"></div>
+                <div class ="datatable-dropdown col-3" style="display: flex; justify-content: end;">
+                  <label>
+                    <select class ="datatable-selector" name="per-page">
+                      <option value="5">5</option>
+                      <option value="10">10</option>
+                      <option value="-1">All</option>
+                    </select> 
+                  </label>
+                </div>
+                <table class="table datatable" style="text-align: center;" >
                   <thead>
                     <tr>
-                      <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
-                      <th>#</th>
-                      <th>사용</th>
-                      <th>코드그룹 코드</th>
-                      <th>코드그룹 이름</th>
-                      <th>코드그룹 이름(영문)</th>
-                      <th>갯수</th>
-                      <th>순서</th>
-                      <th>등록일</th>
-                      <th>수정일</th>
+                      <th style="text-align: center;"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                      <th style="text-align: center;">#</th>
+                      <th style="text-align: center;">사용</th>
+                      <th style="text-align: center;">코드그룹 코드</th>
+                      <th style="text-align: center;">코드그룹 이름</th>
+                      <th style="text-align: center;">코드그룹 이름(영문)</th>
+                      <th style="text-align: center;">갯수</th>
+                      <th style="text-align: center;">순서</th>
+                      <th style="text-align: center;">등록일</th>
+                      <th >수정일</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -669,15 +692,14 @@
                   </li>
                 </ul>
               </nav> -->
-              <div class ="row wrapfin">
+              <div class ="row wrapfin" style="background-color: white;">
                 <div class = "col-3">
                   <button type="button" class="btn btn-danger">x</button>
-                  <button type="button" class="btn btn-danger"><i class="bi bi-exclamation-octagon"></i></button>
+                  <button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button>
                 </div>
                 <div class= "col-6"></div>
                 <div class = "col-3 fini" style="display: flex; justify-content: end;">
-                  <button type="button" class="btn btn-link" style="text-decoration: none; border: 1px solid;">U</button>
-                  <button type="button" class="btn btn-success">파일</button>
+                  <button type="button" class="btn btn-success"><i class="bi bi-file-earmark-excel-fill"></i></button>
                   <input class="btn btn-primary" type="button" value="+">
                 </div>
               </div>
