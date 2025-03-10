@@ -363,10 +363,10 @@
       </li><!-- End Components Nav -->
 
       <li class="nav-item">
-        <a class="nav-link " data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-journal-text"></i><span>Forms</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="forms-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+        <ul id="forms-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
           <li>
             <a href="forms-layouts.html">
               <i class="bi bi-circle"></i><span>Form Layouts</span>
@@ -387,86 +387,48 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-layout-text-window-reverse"></i><span>사케 제품</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="tables-general.html">
-              <i class="bi bi-circle"></i><span>General Tables</span>
+            <a href="tables-sake_item.html">
+              <i class="bi bi-circle"></i><span>사케 관리</span>
             </a>
           </li>
           <li>
             <a href="tables-data.html">
-              <i class="bi bi-circle"></i><span>Data Tables</span>
+              <i class="bi bi-circle"></i><span>사케 그룹 관리</span>
             </a>
           </li>
         </ul>
       </li><!-- End Tables Nav -->
       
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#system-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link" data-bs-target="#system-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-bar-chart"></i><span>시스템 관리</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="system-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <ul id="system-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
           <li>
             <a href="forms-codeadmin1.html">
               <i class="bi bi-circle"></i><span>코드 관리</span>
             </a>
           </li>
           <li>
-            <a href="forms-codegroup1.html">
+            <a href="forms-codegroup1.html" class="active">
               <i class="bi bi-circle"></i><span>코드그룹관리</span>
             </a>
           </li>
-        </ul>
-      </li><!-- End Charts Nav -->
-
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-bar-chart"></i><span>Charts</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="charts-chartjs.html">
-              <i class="bi bi-circle"></i><span>Chart.js</span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span>ApexCharts</span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-echarts.html">
-              <i class="bi bi-circle"></i><span>ECharts</span>
+            <a href="forms-code_information.html">
+              <i class="bi bi-circle"></i><span>개인정보관리</span>
             </a>
           </li>
         </ul>
       </li><!-- End Charts Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-gem"></i><span>Icons</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="icons-bootstrap.html">
-              <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-remix.html">
-              <i class="bi bi-circle"></i><span>Remix Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-boxicons.html">
-              <i class="bi bi-circle"></i><span>Boxicons</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Icons Nav -->
+
+
+      
 
       <li class="nav-heading">Pages</li>
 
@@ -570,8 +532,8 @@
                 </button></div>
             </div>
             <div class=" row bb ">
-              <div class = "row cent justify-content-center"></div>
-                <div class ="col-3"><h4>Total:160</h4></div>
+              <div class = "row cent justify-content-center;">
+                <div class ="col-3"><h5>Total:160</h4></div>
                 <div class ="col-3"></div>
                 <div class ="col-3"></div>
                 <div class ="datatable-dropdown col-3" style="display: flex; justify-content: end;">
@@ -583,41 +545,61 @@
                     </select> 
                   </label>
                 </div>
-                <table class="table datatable" style="text-align: center;" >
-                  <thead>
+                <table class="table datatable" style=" text-align: center">   
+                  <thead>              
                     <tr>
                       <th style="text-align: center;"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
                       <th style="text-align: center;">#</th>
                       <th style="text-align: center;">사용</th>
                       <th style="text-align: center;">코드그룹 코드</th>
                       <th style="text-align: center;">코드그룹 이름</th>
-                      <th style="text-align: center;">코드그룹 이름(영문)</th>
-                      <th style="text-align: center;">갯수</th>
+                      <th style="text-align: center;">코드</th>
+                      <th style="text-align: center;">대체코드</th>
+                      <th style="text-align: center;">코드이름</th>
+                      <th style="text-align: center;">코드이름(영문)</th>
                       <th style="text-align: center;">순서</th>
                       <th style="text-align: center;">등록일</th>
-                      <th >수정일</th>
+                      <th style="text-align: center;">수정일</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
                       <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
                       <td>160</td>
                       <td>Y</td>
                       <td>42</td>
-                      <td><a href="">작품기타사이트유형</a></td>
+                      <td>작품기타사이트유형</td>
+                      <td>381</td>
                       <td></td>
-                      <td>8</td>
+                      <td><a href="">공식홈페이지</a></td>
+                      <td></td>
                       <td>1</td>
                       <td></td>
                       <td></td>
                     </tr>
+                    <tr>
+                      <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                      <td>159</td>
+                      <td>Y</td>
+                      <td>42</td>
+                      <td>작품기타사이트유형</td>
+                      <td>382</td>
+                      <td></td>
+                      <td><a href="">기타사이트</a></td>
+                      <td></td>
+                      <td>2</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
                       <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
                       <td>158</td>
                       <td>Y</td>
                       <td>41</td>
-                      <td><a  href="">작품연재사이트</a></td>
+                      <td>작품연재사이트</td>
+                      <td>372</td>
                       <td></td>
-                      <td>9</td>
+                      <td><a href="">네이버웹툰</a></td>
+                      <td></td>
                       <td>1</td>
                       <td></td>
                       <td></td>
@@ -627,9 +609,11 @@
                       <td>157</td>
                       <td>Y</td>
                       <td>41</td>
-                      <td><a  href="">작품연재사이트</a></td>
+                      <td>작품연재사이트</td>
+                      <td>383</td>
                       <td></td>
-                      <td>10</td>
+                      <td><a href="">카카오웹툰</a></td>
+                      <td></td>
                       <td>1</td>
                       <td></td>
                       <td></td>
@@ -639,9 +623,11 @@
                       <td>156</td>
                       <td>Y</td>
                       <td>42</td>
-                      <td><a  href="">작품연재사이트</a></td>
+                      <td>작품연재사이트</td>
+                      <td>381</td>
                       <td></td>
-                      <td>7</td>
+                      <td><a href="">버프툰</a></td>
+                      <td></td>
                       <td>3</td>
                       <td></td>
                       <td></td>
@@ -651,9 +637,11 @@
                       <td>156</td>
                       <td>Y</td>
                       <td>42</td>
-                      <td><a  href="">작품연재사이트</a></td>
+                      <td>작품연재사이트</td>
+                      <td>381</td>
                       <td></td>
-                      <td>7</td>
+                      <td><a href="">버프툰</a></td>
+                      <td></td>
                       <td>3</td>
                       <td></td>
                       <td></td>
@@ -663,9 +651,11 @@
                       <td>156</td>
                       <td>Y</td>
                       <td>42</td>
-                      <td><a  href="">작품연재사이트</a></td>
+                      <td>작품연재사이트</td>
+                      <td>381</td>
                       <td></td>
-                      <td>7</td>
+                      <td><a href="">버프툰</a></td>
+                      <td></td>
                       <td>3</td>
                       <td></td>
                       <td></td>
@@ -692,19 +682,20 @@
                   </li>
                 </ul>
               </nav> -->
-              <div class ="row wrapfin" style="background-color: white;">
+              <div class ="row wrapfin">
                 <div class = "col-3">
                   <button type="button" class="btn btn-danger">x</button>
                   <button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button>
                 </div>
                 <div class= "col-6"></div>
                 <div class = "col-3 fini" style="display: flex; justify-content: end;">
+                  <button type="button" class="btn btn-link" style="text-decoration: none; border: 1px solid;">U</button>
                   <button type="button" class="btn btn-success"><i class="bi bi-file-earmark-excel-fill"></i></button>
                   <input class="btn btn-primary" type="button" value="+">
                 </div>
               </div>
             </div>  
-          </div> <!-- 중앙 부분  기본정보-->
+          </div> <!-- 중앙 부분  기본정보-->  
 
   </main><!-- End #main -->
 
